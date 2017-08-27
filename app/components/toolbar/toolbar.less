@@ -1,0 +1,36 @@
+.toolbar {
+  background: @body-bg-white;
+  border-radius: @border-radius-base;
+  box-shadow: 0 0 0 1px @gray-lighter inset;
+  padding: 30px;
+  @media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+    padding: 30px 20px;
+  }
+  @media (max-width: @screen-xs-max) {
+    padding: 20px;
+  }
+  .pager {
+    float: left;
+    margin: 0;
+    @media (max-width: @screen-xs-max) {
+      float: none;
+      margin: 0 0 10px;
+      text-align: left;
+    }
+    .amount {
+      color: @gray;
+      font-size: @font-size-base;
+      margin: 0;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  
+  .sorter {
+    float: right;
+    @media (max-width: @screen-xs-max) {
+      float: none;
+    }
+  }
+}

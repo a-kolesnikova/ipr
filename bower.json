@@ -1,0 +1,21 @@
+{
+  "name": "habr",
+  "version": "0.0.0",
+  "authors": [
+    "alexandra <shytik108@mail.ru>"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "knockout": "3.4.2",
+	"amplify": "*",
+    "requirejs-text": "*"
+  }
+}

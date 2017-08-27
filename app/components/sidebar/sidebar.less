@@ -1,0 +1,22 @@
+.layered-navigation {
+  .filter-list {
+    padding: 20px;
+    background: @body-bg-white;
+    border-radius: @border-radius-base;
+    @media (min-width: @screen-lg-min) {
+      min-height: 400px;
+    }
+    @media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+      box-shadow: 0 0 0 1px @gray-lighter inset;
+      margin-bottom: 10px;
+    }
+    @media (max-width: @screen-xs-max) {
+      box-shadow: 0 0 0 1px @gray-lighter inset;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: @font-size-large + 2;
+      margin-bottom: 10px;
+    }
+  }
+}
