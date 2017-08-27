@@ -1,19 +1,15 @@
-function get(url) {
-  return new Promise(function(resolve, reject) {
-    var req = new XMLHttpRequest();
-    req.open('GET', url);
-    req.onload = function() {
-      if (req.status == 200) {
-        resolve(req.response);
-      }
-      else {
-        reject(Error(req.statusText));
-      }
-    };
-    req.onerror = function() {
-      reject(Error("Network Error"));
-    };
-    req.send();
-  });
+function getJSON(url, callback) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('get', url, true);
+  xhr.responseType = 'json';
+  xhr.onload = function() {
+    var status = xhr.status;
+    if (status == 200) {
+      callback(null, xhr.response);
+    } else {
+      callback(status);
+    }
+  };
+  xhr.send();
 }
 

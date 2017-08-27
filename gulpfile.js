@@ -15,7 +15,6 @@ var path = {
         html: 'build/',
         components: 'build/components/',
         js: 'build/boot/',
-        core: 'build/core/',
         css: 'build/css/',
         img: 'build/images/',
         favicon: 'build/'
@@ -25,7 +24,6 @@ var path = {
         components: 'app/components/**/*.{html,js}',
         js: 'app/boot/**',
         style: 'app/styles/styles.less',
-        core: 'app/core/**',
         img: 'app/images/**/*.*',
         favicon: 'app/favicon.ico'
     },
@@ -60,7 +58,6 @@ gulp.task('style:build', function () {
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js).pipe(gulp.dest(path.build.js))
-    gulp.src(path.src.core).pipe(gulp.dest(path.build.core)) 
 });
 
 gulp.task('image:build', function () {
