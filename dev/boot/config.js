@@ -2,11 +2,11 @@ require.config({
     baseUrl: 'boot',
     paths: {
         // Libraries
-        "jquery": "../../bower_components/jquery/dist/jquery",
-        "knockout": "../../bower_components/knockout/dist/knockout",
-        "text": "../../bower_components/requirejs-text/text",
+        "jquery": "../lib/jquery.min",
+        "knockout": "../lib/knockout",
+        "text": "../lib/text",
         "init": "init",
-        "amplify": "../../bower_components/amplify/lib/amplify.min",
+        "amplify": "../lib/amplify.min",
 
         // Components
         "header": "../components/header/header",
